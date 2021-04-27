@@ -1,5 +1,10 @@
-"""
-   This module is the hub for the library
+from setuptools import find_packages, setup
 
-   For details and applications of these functions, check Documentation on GitHub
-"""
+setup(
+    name='pysics',
+    packages=find_packages(include=['pysics']),
+    version='0.1.0',
+    description='My first Python library',
+    author='Sebestien Palmerio, Jérémie Corkery',
+    license='TBD',
+)

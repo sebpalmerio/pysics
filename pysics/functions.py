@@ -40,3 +40,8 @@ def simpsons(f, a, b, N):
 
     return sum
 
+"""
+   This module is the hub for the library
+
+   For details and applications of these functions, check Documentation on GitHub
+"""
