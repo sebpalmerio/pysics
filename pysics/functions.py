@@ -11,7 +11,7 @@ def trapezoid(f, a, b, N):
     Implements the trapezoid integration scheme. 
     Arguments:
         f: function that returns an integer value
-        a: left integration bound
+        a: lef integration bound
         b: right integration bound
         N: number of partitions to divide the interval into (i.e. how many slices are we seperating our interval into)
 
@@ -19,11 +19,11 @@ def trapezoid(f, a, b, N):
 
     """
     h = (b-a)/N
-    sum = (f(a)+f(b))/2
+    total = (f(a)+f(b))/2
     for i in range(1,N):
-        sum += f(a+i*h)
+        total += f(a+i*h)
     
-    return sum
+    return total
 
 def simpsons(f, a, b, N):
     """
@@ -38,12 +38,12 @@ def simpsons(f, a, b, N):
 
     """    
     h = (b-a)/N
-    sum = (f(a)+f(b))*(h/3)
+    total = (f(a)+f(b))*(h/3)
     for i in range(1,N):
-        sum += 4 * f(a+i*h)
-        sum += 2 * f(a+i*h)
+        total += 4 * f(a+i*h)
+        total += 2 * f(a+i*h)
 
-    return sum
+    return total
 
 def RK4(f, ti, tf, h, yinit):
     '''
