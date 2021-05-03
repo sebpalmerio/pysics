@@ -6,9 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# VS Code
+.vscode/
+
 # Distribution / packaging
 .Python
-.vscode/
 build/
 develop-eggs/
 dist/
@@ -128,3 +130,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# OS generated files
+.DS_Store
+.DS_Store?
