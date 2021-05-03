@@ -6,9 +6,6 @@ __pycache__/
 # C extensions
 *.so
 
-# VS Code
-.vscode/
-
 # Distribution / packaging
 .Python
 build/
@@ -134,3 +131,6 @@ dmypy.json
 # OS generated files
 .DS_Store
 .DS_Store?
+
+# VS Code
+.vscode/
